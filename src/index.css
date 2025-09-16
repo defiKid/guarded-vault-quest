@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Fantasy Dungeon Color Palette */
+    --background: 240 20% 8%;
+    --foreground: 45 100% 90%;
+
+    --card: 240 25% 12%;
+    --card-foreground: 45 100% 90%;
+
+    --popover: 240 25% 12%;
+    --popover-foreground: 45 100% 90%;
+
+    /* Magical Purple Primary */
+    --primary: 270 85% 60%;
+    --primary-foreground: 45 100% 95%;
+
+    /* Golden Secondary */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 240 25% 10%;
+
+    --muted: 240 15% 20%;
+    --muted-foreground: 45 20% 70%;
+
+    /* Emerald Accent for Glows */
+    --accent: 160 85% 50%;
+    --accent-foreground: 240 25% 10%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 45 100% 95%;
+
+    --border: 240 15% 25%;
+    --input: 240 15% 20%;
+    --ring: 270 85% 60%;
+
+    /* Fantasy Design Tokens */
+    --mystical-purple: 270 85% 60%;
+    --golden-treasure: 45 95% 55%;
+    --emerald-glow: 160 85% 50%;
+    --shadow-deep: 240 30% 5%;
+    --parchment: 45 40% 85%;
+
+    /* Magical Gradients */
+    --gradient-mystical: linear-gradient(135deg, hsl(270 85% 60% / 0.8), hsl(300 70% 50% / 0.6));
+    --gradient-treasure: linear-gradient(135deg, hsl(45 95% 55%), hsl(35 90% 45%));
+    --gradient-dungeon: linear-gradient(180deg, hsl(240 20% 8%), hsl(240 30% 5%));
+    --gradient-glow: radial-gradient(circle, hsl(var(--accent) / 0.4), transparent 70%);
+
+    /* Magical Shadows */
+    --shadow-mystical: 0 10px 30px hsl(270 85% 60% / 0.3);
+    --shadow-treasure: 0 10px 30px hsl(45 95% 55% / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.6);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode inherits fantasy theme */
+    --background: 240 25% 6%;
+    --foreground: 45 100% 92%;
+
+    --card: 240 30% 10%;
+    --card-foreground: 45 100% 92%;
+
+    --popover: 240 30% 10%;
+    --popover-foreground: 45 100% 92%;
+
+    --primary: 270 90% 65%;
+    --primary-foreground: 45 100% 98%;
+
+    --secondary: 45 98% 60%;
+    --secondary-foreground: 240 30% 8%;
+
+    --muted: 240 20% 15%;
+    --muted-foreground: 45 25% 75%;
+
+    --accent: 160 90% 55%;
+    --accent-foreground: 240 30% 8%;
+
+    --destructive: 0 90% 65%;
+    --destructive-foreground: 45 100% 98%;
+
+    --border: 240 20% 20%;
+    --input: 240 20% 15%;
+    --ring: 270 90% 65%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
