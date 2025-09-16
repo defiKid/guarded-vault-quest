@@ -1,5 +1,5 @@
 import WalletConnect from "@/components/WalletConnect";
-import PartyStatus from "@/components/PartyStatus";
+import PartyManager from "@/components/PartyManager";
 import DungeonMap from "@/components/DungeonMap";
 import CompleteDungeon from "@/components/CompleteDungeon";
 import Logo from "@/components/Logo";
@@ -25,7 +25,7 @@ const Index = () => {
         {/* Left Sidebar */}
         <div className="lg:col-span-1 space-y-6">
           <WalletConnect />
-          <PartyStatus />
+          <PartyManager />
           <CompleteDungeon />
         </div>
 
