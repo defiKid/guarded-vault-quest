@@ -1,21 +1,32 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="dungeonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C084FC;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    <linearGradient id="chestGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FCD34D;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- Background circle -->
-  <circle cx="16" cy="16" r="15" fill="url(#backgroundGradient)" stroke="url(#shieldGradient)" stroke-width="2"/>
+  <!-- Dungeon background -->
+  <rect width="32" height="32" rx="6" fill="url(#dungeonGradient)"/>
   
-  <!-- Shield icon -->
-  <path d="M16 4L22 8V16C22 20.5 16 28 16 28S10 20.5 10 16V8L16 4Z" fill="url(#shieldGradient)" stroke="white" stroke-width="1" stroke-linejoin="round"/>
+  <!-- Dungeon entrance arch -->
+  <path d="M8 12 L8 24 L12 24 L12 20 L20 20 L20 24 L24 24 L24 12 L20 12 L20 16 L12 16 L12 12 Z" fill="#1F2937" opacity="0.8"/>
   
-  <!-- FHE text -->
-  <text x="16" y="24" font-family="Arial, sans-serif" font-size="6" font-weight="bold" text-anchor="middle" fill="white">FHE</text>
+  <!-- Treasure chest -->
+  <rect x="14" y="18" width="4" height="3" rx="0.5" fill="url(#chestGradient)"/>
+  <rect x="13" y="17" width="6" height="1" rx="0.5" fill="url(#chestGradient)"/>
+  
+  <!-- Chest lock -->
+  <circle cx="16" cy="19.5" r="0.5" fill="#1F2937"/>
+  
+  <!-- Magical sparkles -->
+  <circle cx="10" cy="8" r="1" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="22" cy="10" r="0.8" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="6" cy="20" r="0.6" fill="#FCD34D" opacity="0.7"/>
+  <circle cx="26" cy="18" r="0.7" fill="#FCD34D" opacity="0.5"/>
 </svg>

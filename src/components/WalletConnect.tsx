@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield, Coins } from "lucide-react";
+import { Wallet, Key, Gem } from "lucide-react";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useDisconnect } from 'wagmi';
 
@@ -78,14 +78,14 @@ const WalletConnect = () => {
                     return (
                       <div className="space-y-3">
                         <div className="flex items-center gap-2 p-3 bg-muted/50 rounded-lg border border-accent/20">
-                          <Shield className="h-4 w-4 text-accent animate-glow-pulse" />
+                          <Key className="h-4 w-4 text-accent animate-glow-pulse" />
                           <span className="text-sm font-mono text-foreground">
                             {account.displayName}
                           </span>
                         </div>
                         
                         <div className="flex items-center gap-2 text-sm text-accent">
-                          <Coins className="h-4 w-4" />
+                          <Gem className="h-4 w-4" />
                           <span>Ready for dungeon exploration</span>
                         </div>
 
@@ -106,14 +106,14 @@ const WalletConnect = () => {
         ) : (
           <div className="space-y-3">
             <div className="flex items-center gap-2 p-3 bg-muted/50 rounded-lg border border-accent/20">
-              <Shield className="h-4 w-4 text-accent animate-glow-pulse" />
+              <Key className="h-4 w-4 text-accent animate-glow-pulse" />
               <span className="text-sm font-mono text-foreground">
                 {address}
               </span>
             </div>
             
             <div className="flex items-center gap-2 text-sm text-accent">
-              <Coins className="h-4 w-4" />
+              <Gem className="h-4 w-4" />
               <span>Ready for dungeon exploration</span>
             </div>
 
